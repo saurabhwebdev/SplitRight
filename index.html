@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splitright</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+                <strong>Splitright</strong>
+            </a>
+        </div>
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" data-page="dashboard">
+                    <span class="icon"><i class="fas fa-chart-line"></i></span>
+                    <span>Dashboard</span>
+                </a>
+                <a class="navbar-item" data-page="expenses">
+                    <span class="icon"><i class="fas fa-receipt"></i></span>
+                    <span>Expenses</span>
+                </a>
+                <a class="navbar-item" data-page="friends">
+                    <span class="icon"><i class="fas fa-users"></i></span>
+                    <span>Friends</span>
+                </a>
+                <a class="navbar-item" data-page="groups">
+                    <span class="icon"><i class="fas fa-user-group"></i></span>
+                    <span>Groups</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div id="app" class="container mt-4">
+        <div id="page-content"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
